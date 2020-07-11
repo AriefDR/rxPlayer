@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/logoBulet.png" type="image" sizes="16x16">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/form.css">
+    <link rel="stylesheet" href="assets/css/premium.css">
+    <link rel="stylesheet" href="assets/css/toplist.css">
+    <title>Register - rxplayer</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="assets/img/logo.png" alt="logorxplayer"></a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="premium.html">Premium</a></li>
+            <li><a href="toplist.html">Top List</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Genre</button>
+                    <div class="dropdown-content">
+                        <a href="kpop.html">K-POP</a>
+                        <a href="pop.html">POP</a>
+                    </div>
+                </div>
+            </li>
+            <li class="register"><a href="register.html">Register</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <div class="formValidate">
+        <div class="container">
+            <h1>Register</h1>
+            <div id="alert-msg" class="alert" role="alert">
+                <p id="msg"></p>
+            </div>
+            <form onsubmit="return false" id="form">
+                <label for="">FullName</label><br>
+                <input type="text" name="fullname" id="fname"><br>
+                <label for="">Email</label><br>
+                <input type="text" name="email" id="email"><br>
+                <label for="">Password</label><br>
+                <input type="password" name="password" id="pass"><br>
+                <label for="">Gender</label><br>
+                <select id="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select><br>
+                <label for="">Payment</label><br>
+                <select id="payment">
+                    <option value="Credit">Credit</option>
+                    <option value="LinkAja">LinkAja</option>
+                    <option value="GoPay">GoPay</option>
+                    <option value="Ovo">Ovo</option>
+                </select>
+                <label for="">AGGREE TO TERM & CONDITIONS</label>
+                <input type="checkbox" name="checkbox" value="check" id="agrement">
+                <input type="submit" value="Submit" onclick="validation()">
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="follow">
+            <h3>FOLLOW US :</h3>
+            <a href="https://www.instagram.com/" target="_blank"><img src="assets/img/ig.png" alt="ig"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="assets/img/tw.png" alt="tw"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="assets/img/fb.png" alt="fb"></a>
+        </div>
+    </div>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/formValidate.js"></script>
+</body>
+
+</html>

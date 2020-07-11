@@ -1,0 +1,714 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #f5eaea;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+/* Navigasi bar */
+nav {
+    display: flex;
+    background-color: #4d4646;
+    height: 70px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    padding: 0 100px;
+    height: 8vh;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li a {
+    font-size: medium;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    text-decoration: none;
+
+}
+
+.menu-toggle {
+    z-index: 3;
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    margin-right: 50px;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 27px;
+    height: 3px;
+    background-color: rgb(226, 196, 255);
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+/* Humburger Menu Animatioan */
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+nav ul li a:hover,
+.register a:hover {
+    color: antiquewhite;
+}
+
+.register {
+    display: flex;
+    justify-content: center;
+    background-color: #ca3e47;
+    width: 80px;
+    border-radius: 10%;
+    padding: 10px;
+    margin-right: 50px;
+}
+
+.register a {
+    color: white;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: #f5eaea;
+    padding: 25px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f5eaea;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover {
+    background-color: #414141;
+    color: #f5eaea;
+}
+
+.dropdown-content a:hover {
+    background-color: #f5eaea;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+.promosi {
+    width: 100%;
+    height: 100%;
+
+}
+
+.events-news {
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.sub-judul {
+    padding-top: 30px;
+    padding-left: 100px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-family: Circular, helvetica, Arial, sans-serif;
+    color: #414141;
+}
+
+.con-mid {
+    margin: 0px 100px;
+    background-color: #414141;
+}
+
+.promosi .tulisanPromo {
+    padding-top: 40px;
+    margin: auto;
+    width: 70rem;
+
+}
+
+.promosi .tulisanPromo h1 {
+    text-align: center;
+    font-family: Circular, helvetica, Arial, sans-serif;
+    font-size: 66px;
+    font-weight: 900;
+    letter-spacing: -1.6px;
+    color: white;
+}
+
+.buttonPilihan {
+    text-align: center;
+    padding: 10px;
+    margin: 30px 0;
+}
+
+.btndaftarPremium {
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    width: 290px;
+    box-shadow: 2px 4px 15px #427388;
+    letter-spacing: 2px;
+    background-color: #4d4646;
+    color: #f5eaea;
+    border: 1px solid #4d4646;
+}
+
+.con-mid .buttonPilihan a:hover {
+    background-color: transparent;
+    color: #f5eaea;
+    border: 1px solid transparent;
+}
+
+.con-mid .buttonPilihan a:active {
+    transform: scale(0.9);
+}
+
+.text-auto-promosi {
+    text-align: center;
+    font-size: 16px;
+    color: #f5eaea;
+}
+
+.rxplayerAbout {
+    height: 70vh;
+    background-color: #f5d2d2c9;
+    margin-top: 80px;
+}
+
+.rxplayerAbout .container h1 {
+    text-align: center;
+    margin-top: 90px;
+    font-size: 70px;
+    font-weight: 900;
+    letter-spacing: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.rxplayerAbout .container h3 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.rxplayerAbout .container .buttonPilihan a:active {
+    transform: scale(0.9);
+}
+
+.footer {
+    width: 100%;
+    padding: 19px;
+    height: 19vh;
+    margin-top: 50px;
+    background-color: #4d4646;
+}
+
+/* 
+.prem {
+    position: fixed;
+    bottom: 0;
+} */
+
+
+.footer .follow {
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.footer .follow h3 {
+    color: #f5eaea;
+    font-weight: 400;
+    font-size: 30px;
+    display: inline;
+}
+
+.footer .follow img {
+    width: 50px;
+    text-align: center;
+    margin: 0px 30px;
+
+}
+
+/* responsive */
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+    .con-mid {
+        margin: 0px 100px;
+    }
+
+    .container,
+    .events-news {
+        padding: 0 10px;
+    }
+
+    .promosi .tulisanPromo {
+        padding-top: 40px;
+        width: 50rem;
+
+    }
+
+    .promosi .tulisanPromo h1 {
+        font-size: 56px;
+    }
+
+    .buttonPilihan {
+        padding: 10px;
+        margin: 30px 0;
+    }
+
+    .btndaftarPremium {
+        padding: .375rem .75rem;
+        font-size: 18px;
+        line-height: 1.5;
+        width: 300px;
+        letter-spacing: 1px;
+    }
+
+    .text-auto-promosi {
+        font-size: 15px;
+        letter-spacing: 0;
+    }
+
+    .rxplayerAbout .container h1 {
+        font-size: 68px;
+        font-weight: 900;
+        letter-spacing: 10px;
+    }
+
+    .rxplayerAbout .container h3 {
+        font-size: 28px;
+    }
+
+    .footer {
+        height: 21vh;
+    }
+
+
+}
+
+/* Medium devices (tablets, less than 992px)*/
+
+@media (max-width: 991.98px) {
+    .con-mid {
+        margin: 0px 100px;
+    }
+
+    .container,
+    .events-news {
+        padding: 0 7px;
+    }
+
+    .promosi .tulisanPromo {
+        padding-top: 40px;
+        width: 50rem;
+
+    }
+
+    .promosi .tulisanPromo {
+        padding-top: 40px;
+        width: 30rem;
+
+    }
+
+    .promosi .tulisanPromo h1 {
+        font-size: 40px;
+    }
+
+    .buttonPilihan {
+        padding: 8px;
+        margin: 28px 0;
+    }
+
+    .btndaftarPremium {
+        padding: .375rem .75rem;
+        font-size: 14px;
+        line-height: 1.5;
+        width: 270px;
+        letter-spacing: 1px;
+    }
+
+    .text-auto-promosi {
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+
+    .rxplayerAbout .container h1 {
+        font-size: 64px;
+        font-weight: 900;
+        letter-spacing: 10px;
+    }
+
+    .rxplayerAbout .container h3 {
+        font-size: 24px;
+    }
+
+    .footer {
+        height: 21vh;
+    }
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .menu-toggle {
+        display: flex;
+        cursor: pointer;
+    }
+
+    nav ul {
+        z-index: 2;
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #4d4646;
+        width: 50%;
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+
+    nav ul.slide {
+        transform: translateX(0);
+    }
+
+    .register {
+        margin-right: 0;
+    }
+
+    .con-mid {
+        margin: 0px 60px;
+    }
+
+    .container,
+    .events-news {
+        padding: 0 15px;
+    }
+
+    .sub-judul {
+        padding: 0 60px;
+        padding-top: 30px;
+    }
+
+    .promosi .tulisanPromo {
+        padding-top: 40px;
+        width: 28rem;
+
+    }
+
+    .promosi .tulisanPromo h1 {
+        font-size: 35px;
+    }
+
+    .buttonPilihan {
+        padding: 6px;
+        margin: 25px 0;
+    }
+
+    .btndaftarPremium {
+        padding: .375rem .75rem;
+        font-size: 13px;
+        line-height: 1.5;
+        width: 260px;
+        letter-spacing: 1px;
+    }
+
+    .text-auto-promosi {
+        font-size: 12px;
+        letter-spacing: 0;
+
+    }
+
+    .rxplayerAbout .container h1 {
+        font-size: 60px;
+        font-weight: 900;
+        letter-spacing: 10px;
+    }
+
+    .rxplayerAbout .container h3 {
+        font-size: 20px;
+    }
+
+
+    .footer {
+        padding: 10px;
+        height: 21vh;
+    }
+
+    .footer .follow {
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+
+    .footer .follow h3 {
+        font-size: 25px;
+    }
+
+    .footer .follow img {
+        width: 40px;
+        margin: 0px 30px;
+
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .logo img {
+        padding: 0 60px;
+        height: 8vh;
+    }
+
+    .menu-toggle {
+        display: flex;
+        cursor: pointer;
+    }
+
+    nav ul {
+        z-index: 2;
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #4d4646;
+        width: 50%;
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+
+    nav ul.slide {
+        transform: translateX(0);
+    }
+
+    .register {
+        margin-right: 0;
+    }
+
+    .con-mid {
+        margin: 0px 35px;
+    }
+
+    .container,
+    .events-news {
+        padding: 0 3px;
+    }
+
+    .sub-judul {
+        padding: 0 35px;
+        padding-top: 30px;
+    }
+
+    .promosi .tulisanPromo {
+        padding-top: 35px;
+        width: 24rem;
+
+    }
+
+    .promosi .tulisanPromo h1 {
+        font-size: 29px;
+    }
+
+    .buttonPilihan {
+        padding: 3px;
+        margin: 22px 0;
+    }
+
+    .btndaftarPremium {
+        padding: .375rem .75rem;
+        font-size: 12px;
+        line-height: 1.5;
+        width: 220px;
+        letter-spacing: 1px;
+    }
+
+    .text-auto-promosi {
+        font-size: 9px;
+        letter-spacing: 0;
+
+    }
+
+    .rxplayerAbout .container h1 {
+        font-size: 48px;
+        font-weight: 900;
+        letter-spacing: 10px;
+    }
+
+    .rxplayerAbout .container h3 {
+        font-size: 20px;
+    }
+
+    .footer {
+        height: 21vh;
+    }
+
+
+    .footer {
+        padding: 15px;
+    }
+
+    .footer .follow {
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+
+    .footer .follow h3 {
+        font-size: 24px;
+    }
+
+    .footer .follow img {
+        width: 34px;
+        margin: 0px 20px;
+
+    }
+
+}
+
+/*  Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 411px) {
+    .logo img {
+        padding: 0 33px;
+        height: 7vh;
+    }
+
+    .con-mid {
+        margin: 0px 15px;
+    }
+
+    .container,
+    .events-news {
+        padding: 0px;
+    }
+
+    .sub-judul {
+        padding: 0 15px;
+        padding-top: 10px;
+    }
+
+    .promosi .tulisanPromo {
+        padding-top: 20px;
+        width: 20rem;
+    }
+
+    .promosi .tulisanPromo h1 {
+        font-size: 20px;
+    }
+
+    .buttonPilihan {
+        padding: 2px;
+        margin: 20px 0;
+    }
+
+    .btndaftarPremium {
+        padding: .375rem .75rem;
+        font-size: 10px;
+        line-height: 1.5;
+        width: 170px;
+        letter-spacing: 1px;
+    }
+
+    .text-auto-promosi {
+        font-size: 6px;
+        letter-spacing: 0;
+
+    }
+
+    .rxplayerAbout {
+        height: 39vh;
+    }
+
+    .rxplayerAbout .container h1 {
+        font-size: 40px;
+        font-weight: 900;
+        letter-spacing: 10px;
+        margin-top: 40px;
+    }
+
+    .rxplayerAbout .container h3 {
+        font-size: 17px;
+    }
+
+    .footer {
+        height: 21vh;
+    }
+
+    .footer .follow {
+        margin-left: 30px;
+        margin-top: 0px;
+    }
+
+    .footer .follow h3 {
+        display: block;
+        font-size: 24px;
+    }
+
+    .footer .follow img {
+        width: 34px;
+        margin: 10px;
+    }
+}

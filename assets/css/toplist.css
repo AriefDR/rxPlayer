@@ -1,0 +1,44 @@
+.toplist {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    width: 900px;
+    /* Table reset stuff */
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #69899F;
+}
+
+td#table,
+th#table {
+    border: 0 none;
+    height: 30px;
+    min-width: 153px;
+}
+
+th#table {
+    /* Gradient Background */
+    background: linear-gradient(#333 0%, #444 100%);
+    color: #FFF;
+    font-weight: bold;
+    height: 40px;
+}
+
+td#table {
+    background: #FAFAFA;
+    text-align: center;
+}
+
+/* Zebra Stripe Rows */
+
+tr#table:nth-child(even) td#table {
+    background: #EEE;
+}
+
+tr#table:nth-child(odd) td#table {
+    background: #FDFDFD;
+}
